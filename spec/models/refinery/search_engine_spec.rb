@@ -2,6 +2,8 @@ require "spec_helper"
 
 module Refinery
   describe SearchEngine do
+    disconnect_sunspot
+
     describe "#search" do
       context "when page exist" do
         # we're using page factory because search engine uses
