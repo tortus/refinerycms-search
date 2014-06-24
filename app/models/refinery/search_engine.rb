@@ -9,7 +9,7 @@ module Refinery
       results = []
 
       Refinery.searchable_models.each do |model|
-        results << model.limit(RESULTS_LIMIT).with_query(query)
+        results << model.limit(RESULTS_LIMIT).sunspot_search(query)
       end if query.present?
 
       results.flatten[0..(RESULTS_LIMIT - 1)]
