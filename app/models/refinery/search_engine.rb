@@ -15,5 +15,11 @@ module Refinery
       results.flatten[0..(RESULTS_LIMIT - 1)]
     end
 
+    def self.reindex
+      Refinery.searchable_models.each do |model|
+        model.index
+      end
+    end
+
   end
 end
