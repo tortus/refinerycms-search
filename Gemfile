@@ -8,6 +8,8 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 group :development, :test do
   gem 'refinerycms-testing', '~> 2.1.0'
   gem 'poltergeist'
+  gem 'rspec-its'
+  gem 'guard-rspec'
 
   platforms :jruby do
     gem 'activerecord-jdbcsqlite3-adapter'
