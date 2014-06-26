@@ -9,6 +9,8 @@ module Refinery
         sunspot_results = model.sunspot_search(query)
         results[model] = sunspot_results if sunspot_results
       end if query.present?
+
+      results
     end
 
   end
