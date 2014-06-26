@@ -23,13 +23,5 @@ module Refinery
         end
       end
     end
-
-    describe "#reindex" do
-      it "calls #index for every searchable model" do
-        Refinery.stub(:searchable_models) { [Refinery::Page] }
-        Refinery::Page.should_receive(:index)
-        SearchEngine.reindex
-      end
-    end
   end
 end
