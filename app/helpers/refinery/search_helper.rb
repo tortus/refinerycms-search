@@ -23,5 +23,11 @@ module Refinery
       end
     end
 
+    def format_highlight(highlight)
+      if highlight
+        highlight.format { |fragment| content_tag(:mark, html_escape(fragment)) }
+      end
+    end
+
   end
 end
