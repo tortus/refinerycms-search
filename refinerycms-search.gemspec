@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency    'refinerycms-core', '~> 2.1.0'
   s.add_dependency    'refinerycms-acts-as-indexed', '~> 1.0.0'
-  s.add_dependency    'sunspot_rails', '~> 2.1.0'
+  s.add_dependency    'sunspot_rails', '>= 2.1.0'
 
   s.add_development_dependency 'sunspot_solr'
 end
